@@ -53,7 +53,7 @@ header .subtitle {
 }
 
 .bio-card {
-  background-color: #1a202c;
+  background-color: #EDE8D0;
   border: 1px solid #2d3748;
   border-radius: 8px;
   padding: 1.5rem;
@@ -61,7 +61,7 @@ header .subtitle {
 }
 
 .bio-card h3 {
-  color: #EDE8D0;
+  color: #FFD32C;
   margin-bottom: 0.75rem;
 }
 
