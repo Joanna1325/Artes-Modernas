@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rotation = card.getAttribute('data-rotation') || 0;
     const offsetX = card.getAttribute('data-offset-x') || 0;
 
-    // Define a transformação inicial desordenada
+    // Aplica a rotação e o deslocamento horizontal inicial
     card.style.transform = `rotate(${rotation}deg) translateX(${offsetX}px)`;
   });
 });
