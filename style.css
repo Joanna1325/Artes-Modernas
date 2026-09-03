@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #f4f4f4;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.art-card {
+  position: relative;
+  width: 280px;
+  background-color: #222;
+  border: 1px solid #333;
+  padding: 10px;
+  cursor: pointer;
+  /* Transição suave para voltar ao estado "desconstruído" */
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
+  filter: grayscale(80%);
+}
+
+.art-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.art-info {
+  margin-top: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+/* Estado quando o usuário passa o mouse: se alinha e ganha destaque */
+.art-card:hover {
+  transform: translate(0, -10px) rotate(0deg) scale(1.05) !important;
+  filter: grayscale(0%);
+  z-index: 10;
+  border-color: #fff;
+}
+
+.art-card:hover .art-info {
+  opacity: 1;
+}
