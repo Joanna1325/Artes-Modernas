@@ -3,39 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria Desconstruída</title>
+  <title>Vincent van Gogh | O Mestre do Pós-Impressionismo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Galeria Desconstruída</h1>
+  <header>
+    <h1>Vincent van Gogh</h1>
+    <p class="subtitle">Vida, Cores e a Revolução do Pós-Impressionismo</p>
+  </header>
 
-  <main class="gallery-container">
-    <!-- Card atualizado com a imagem de Van Gogh -->
-    <div class="art-card" data-rotation="-8" data-offset-x="-15">
-      <img src="https://totenart.pt/blog/wp-content/uploads/2025/02/van-gogh-cuadro-arte-moderno-1.jpeg" alt="Obra de Vincent van Gogh">
-      <div class="art-info">
-        <h3>Vincent van Gogh</h3>
-        <p>Pós-Impressionismo e expressão através da cor.</p>
+  <!-- Seção Informativa: História e Estilo -->
+  <section class="bio-section">
+    <h2>A História por Trás das Telas</h2>
+    <div class="bio-grid">
+      <div class="bio-card">
+        <h3>O Uso Expressivo da Cor</h3>
+        <p>
+          Diferente dos impressionistas, Van Gogh não usava a cor apenas para capturar a luz natural, mas para transmitir emoções intensas e estados psicológicos. As cores primárias vibrantes e complementares tornaram-se a marca registrada de sua fase em Arles.
+        </p>
+      </div>
+
+      <div class="bio-card">
+        <h3>A Técnica do Impasto</h3>
+        <p>
+          Van Gogh aplicava tintas espessas diretamente na tela, muitas vezes sem diluir, criando pinceladas visíveis, dramáticas e com textura marcante. Essa técnica dava vida, movimento e relevo às suas obras.
+        </p>
+      </div>
+
+      <div class="bio-card">
+        <h3>Períodos de Produção</h3>
+        <p>
+          Em apenas uma década (1881–1890), ele produziu mais de 2.100 obras. Sua trajetória passou do período holandês sombrio (como em <em>Os Comedores de Batata</em>) até a explosão de luz no sul da França e o período introspectivo no asilo de Saint-Rémy.
+        </p>
       </div>
     </div>
+  </section>
 
-    <div class="art-card" data-rotation="12" data-offset-x="20">
-      <img src="https://picsum.photos/id/1062/400/500" alt="Obra de Arte 2">
-      <div class="art-info">
-        <h3>Obra B</h3>
-        <p>Descrição ou conceito da obra.</p>
-      </div>
-    </div>
+  <!-- Galeria Desconstruída de Obras Selecionadas -->
+  <section class="gallery-section">
+    <h2>Obras em Destaque</h2>
+    <p class="gallery-hint">Passe o mouse sobre as obras para alinhá-las e revelar suas cores</p>
 
-    <div class="art-card" data-rotation="-5" data-offset-x="10">
-      <img src="https://picsum.photos/id/1069/400/500" alt="Obra de Arte 3">
-      <div class="art-info">
-        <h3>Obra C</h3>
-        <p>Descrição ou conceito da obra.</p>
+    <main class="gallery-container">
+      
+      <!-- Card 1: Autorretrato -->
+      <div class="art-card" data-rotation="-6" data-offset-x="-10">
+        <img src="https://totenart.pt/blog/wp-content/uploads/2025/02/van-gogh-cuadro-arte-moderno-1.jpeg" alt="Autorretrato de Van Gogh">
+        <div class="art-info">
+          <h3>Autorretrato (1889)</h3>
+          <p>Pintado durante sua estadia em Saint-Rémy, reflete sua introspecção e o domínio das pinceladas onduladas.</p>
+        </div>
       </div>
-    </div>
-  </main>
+
+      <!-- Card 2: A Noite Estrelada -->
+      <div class="art-card" data-rotation="8" data-offset-x="15">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="A Noite Estrelada">
+        <div class="art-info">
+          <h3>A Noite Estrelada (1889)</h3>
+          <p>Uma de suas obras mais famosas, representando a vista da janela do seu quarto no sanatório de Saint-Paul-de-Mausole.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Os Girassóis -->
+      <div class="art-card" data-rotation="-4" data-offset-x="5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/1280px-Vincent_Willem_van_Gogh_127.jpg" alt="Girassóis de Van Gogh">
+        <div class="art-info">
+          <h3>Girassóis (1888)</h3>
+          <p>Criada para decorar o quarto de Paul Gauguin na Casa Amarela em Arles, simboliza gratidão e amizade.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: O Terraço do Café à Noite -->
+      <div class="art-card" data-rotation="6" data-offset-x="-12">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Vincent_Willem_van_Gogh_015.jpg/1280px-Vincent_Willem_van_Gogh_015.jpg" alt="Terraço do Café à Noite">
+        <div class="art-info">
+          <h3>Terraço do Café à Noite (1888)</h3>
+          <p>Primeira obra em que Van Gogh utilizou um fundo estrelado, destacando o contraste entre o amarelo vivo do café e o azul do céu.</p>
+        </div>
+      </div>
+
+    </main>
+  </section>
+
+  <footer>
+    <p>Estudo e Homenagem ao Legado de Vincent van Gogh</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
